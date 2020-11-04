@@ -1,0 +1,18 @@
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-of-type(odd) {
+    background: greenyellow;
+}
+
+th{
+    background: lightseagreen;
+}
+
+td, th {
+    padding: 6px;
+    border: 1px solid blue;
+    text-align: left;
+}
