@@ -11,9 +11,7 @@ class LoginForm extends Component{
       }
   }
 
-//    validateForm = (userName, password) => {
-//     return userName.length>0 && password.length>0;
-// }
+
   forUsername= e => {
       this.setState(
           {
@@ -62,38 +60,3 @@ class LoginForm extends Component{
 
 export default LoginForm
 
-// import React, { useState } from 'react';
-
-// export default function LoginForm(props) {
-//     const [username, setUsername] = useState("");
-//     const [password, setPassword] = useState("");
-
-//     function validateForm() {
-//         return username.length>0 && password.length>0;
-//     }
-
-//     function hangleSubmit(e) {
-//         e.preventDefault();
-//         this.props.history.push("/Data")
-//     }
-
-//     return (
-//         <div className="login">
-//             <form onSubmit={hangleSubmit}>
-//                 <label>User Name</label>
-//                 <input type="username" 
-//                 placeholder="Enter username" 
-//                 value={username} 
-//                 onChange={e => setUsername(e.target.value)} /> <br />
-                
-//                 <label>Password</label>
-//                 <input type="password"
-//                 placeholder="Enter password"
-//                 value={password}
-//                 onChange={e => setPassword(e.target.value)} /> <br />
-
-//                 <button color="primary" type="submit" disabled={!validateForm()}>Login</button>
-//             </form>
-//         </div>
-//     )
-// }
